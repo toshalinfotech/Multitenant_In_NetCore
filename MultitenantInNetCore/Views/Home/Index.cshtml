@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<MultitenantInNetCore.Models.Person>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<div>
+    @foreach (var item in Model)
+    {
+        <span>@item.FirstName @item.LastName</span><br />
+    }
+</div>
